@@ -19,7 +19,10 @@ function Product({ id, title, price }) {
   };
 
   return (
-    <div className=" flex justify-between items-center p-10 border-purple-700 border m-5">
+    <div
+      className=" flex justify-between items-center p-10 border-purple-700 rounded-2xl border m-5 
+    cursor-pointer"
+    >
       <div>
         <p>{title}</p>
         <p>${price}</p>
