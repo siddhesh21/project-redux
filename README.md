@@ -1,4 +1,17 @@
-## Redux Refresher Project
+## Redux Project
+
+### Refresher on REDUX concept
+
+Imagine we have our main APP which contains lots of components and if we have a component (LOGIN where we have all user details) and we now need these user details in a different component which can in level 1, 2, 3 or so on. But we can't afford this as it indicates poor optimization (not a clean code) and causes term known as "PROP DRILLING".
+
+## So to avoid this we use "REDUX" instead.
+
+How it works is simple: REDUX is sort of acting as a DATA-LAYER or GLOBAL-STORE and it wraps around your main APP. Which has that same user details that can be provided or call by any component in our APP.
+Also have one more advantage of splitting itself into different slices where we can say that all information regarding userDetails is responsible for Slice-1, Slice-2 might be to take care items in a cart, Third Slice might be responsible to take care of prices.
+
+How it functions fundamentally?
+To PULL from our DATA-LAYER or GLOBAL-STORE to a component we use "selector".
+To PUSH data from component to our DATA-LAYER or GLOBAL-STORE we use "dispatch action".
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
