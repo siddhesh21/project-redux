@@ -13,6 +13,20 @@ How it functions fundamentally?
 To PULL from our DATA-LAYER or GLOBAL-STORE to a component we use "selector".
 To PUSH data from component to our DATA-LAYER or GLOBAL-STORE we use "dispatch action".
 
+## Taking look into an E-Commerce Store App
+
+### About Slices (fileName: basketSlice.js)
+
+These Slices are basically just an object and we can have any type of data that we may need to update (frequently).
+Here we have items: []
+
+And to control the data we have two reducers (sorta actions that triggers - if the items array need to update or not | add or remove)
+we have "addItemToBasket" and "removeItemFromBasket" then after creating these sets of triggers or action we can export it to use anywhere throughout our APP.
+
+Now, to PULL data from different components we have SELECTOR as mentioned before, we have "selectItems" which has a global state and it updates to the array "items"
+
+`export const selectItems = (state) => state.basket.items;`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
